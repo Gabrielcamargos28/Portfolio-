@@ -1,0 +1,40 @@
+body{
+    background: black;
+}
+header{
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    align-items: center;
+}
+.nomes{
+    display: grid;
+    justify-items:center ;
+}
+.titulo{
+    color: white;
+    font-size: 50px;
+}
+header p {
+    margin-top: 10px;
+    font-size: 30px;
+    color: white;
+}
+.apresentacao{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
+}
+.conteudo{
+    display: grid;
+    border: solid 1px;
+}
+.conteudo__links{
+    text-decoration: none;
+    color: white;
+    font-weight: 20px;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
