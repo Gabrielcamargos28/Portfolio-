@@ -3,9 +3,17 @@ body{
 }
 header{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     height: 200px;
     align-items: center;
+}
+.logo{
+    width: 50px;
+}
+.rede__social__logos{
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
 }
 .nomes{
     display: grid;
@@ -29,7 +37,9 @@ header p {
 }
 .conteudo{
     display: grid;
-    border: solid 1px;
+    border: solid 15px white;
+    border-radius: 20px;
+    padding: 30px;
 }
 .conteudo__links{
     text-decoration: none;
