@@ -20,10 +20,13 @@ body {
       font-family: 'Inter', sans-serif;
       font-family: 'Poppins', sans-serif; 
     }
+    header{
+        height: 20vh;
+    }
 }
   
 header {
-    height: 30vh;
+    height: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,6 +54,10 @@ header div{
     display: block;
     padding: 10px;
     text-decoration: none;
+    transition: color 0.5s;
+}
+.menu a:hover{
+    color: blue;
 }
 a:visited{
     color: white;
@@ -68,11 +75,15 @@ a:visited{
     text-align: center;
     font-size: 2em;
 }
+.title__portfolio{
+    font-size: 25px;
+}
   
 .img-portfolio {
     height: 180px;
     width: 240px;
     object-fit: cover;
+    text-shadow: 0 0 10px blue;
 }
 .portfolio{
     padding: 2em;
@@ -102,10 +113,18 @@ a:visited{
     height: 10vh;
 }
 .contato h2{
-    margin-bottom: 15px;
+    padding: .5em;
 }
 .contato .grid__icons{
     display: flex;
     justify-content: space-around;
     gap: 1em;
 }
+.grid__icons a {
+    font-size: 2em;
+    padding: 0.5em;
+   
+}
+.contato a:hover{
+    text-shadow: 0 0 10px blue;
+}   
