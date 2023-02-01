@@ -1,50 +1,111 @@
-body{
-    background: black;
+body {
+    background: #1F1F1F;
+    color: white;
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+  }
+
+@media (min-width: 400px) {
+    body {
+      font-size: 18px;
+      font-family: 'Inter', sans-serif;
+      font-family: 'Poppins', sans-serif;
+    }
 }
-header{
+  
+@media (min-width: 600px) {
+    body {
+      font-size: 22px;
+      font-family: 'Inter', sans-serif;
+      font-family: 'Poppins', sans-serif; 
+    }
+}
+  
+header {
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+header div{
+    margin-top: 50px;
+}
+.menu {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+  
+.menu ul {
     display: flex;
     justify-content: space-around;
-    height: 200px;
-    align-items: center;
 }
-.logo{
-    width: 50px;
+  
+.menu li {
+    list-style: none;
 }
-.rede__social__logos{
-    width: 50px;
-    height: 50px;
-    margin-left: 30px;
-}
-.nomes{
-    display: grid;
-    justify-items:center ;
-}
-.titulo{
-    color: white;
-    font-size: 50px;
-}
-header p {
-    margin-top: 10px;
-    font-size: 30px;
-    color: white;
-}
-.apresentacao{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    
-}
-.conteudo{
-    display: grid;
-    border: solid 15px white;
-    border-radius: 20px;
-    padding: 30px;
-}
-.conteudo__links{
+  
+.menu a {
+    display: block;
+    padding: 10px;
     text-decoration: none;
+}
+a:visited{
     color: white;
-    font-weight: 20px;
-    margin-bottom: 10px;
-    font-size: 30px;
+    text-decoration: none;
+}
+  
+.site-title {
+    font-size: 2em;
+    text-align: center;
+}
+  
+.site-subtitle {
+    font-style: italic;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 2em;
+}
+  
+.img-portfolio {
+    height: 180px;
+    width: 240px;
+    object-fit: cover;
+}
+.portfolio{
+    padding: 2em;
+    text-align: center;
+}
+.portfolio h2{
+    margin-bottom: 1.5em;
+}
+.portfolio .grid{
+    display: grid;
+    gap: 1em;
+}
+@media (min-width: 560px){
+    .portfolio .grid{
+      grid-template-columns: 240px 240px;
+    }
+}
+@media (min-width: 880px){
+    .portfolio .grid{
+        grid-template-columns: 240px 240px 240px;
+        justify-content: center;
+        align-content: center;
+        height: calc(100vh - 8em - 48px);
+    }
+}
+.contato{
+    height: 10vh;
+}
+.contato h2{
+    margin-bottom: 15px;
+}
+.contato .grid__icons{
+    display: flex;
+    justify-content: space-around;
+    gap: 1em;
 }
